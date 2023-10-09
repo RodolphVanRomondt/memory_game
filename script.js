@@ -32,7 +32,7 @@ BTN.addEventListener("click", function (e) {
     e.target.previousElementSibling.classList.add("none");
     e.target.parentElement.parentElement.nextElementSibling.classList.remove("none");
     e.target.parentElement.parentElement.nextElementSibling.nextElementSibling.classList.remove("none");
-    e.target.parentElement.parentElement.nextElementSibling.nextElementSibling.innerText += `Score: ${score}`;
+    e.target.parentElement.parentElement.nextElementSibling.nextElementSibling.innerText += `Move: ${score}`;
     e.target.innerText = "RESET";
     if (!(INPUT.value)) {
       INPUT.value = "NoName";
@@ -89,7 +89,7 @@ function handleCardClick(e) {
   
   score++;
   scoreArray.push(score);
-  e.target.parentElement.nextElementSibling.innerText = `Score: ${score}`;
+  e.target.parentElement.nextElementSibling.innerText = `Move: ${score}`;
   e.target.style.backgroundColor = e.target.classList[0];
 
   if (!click1 || !click2) {
